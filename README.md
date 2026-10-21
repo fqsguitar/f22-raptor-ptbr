@@ -11,6 +11,14 @@ Este projeto disponibiliza um **patch de tradução com instalador portátil par
 
 ## 📥 Download e instalação
 
+<img width="1680" height="1050" alt="Raptor Screenshot 2026 10 21 - 00 18 50 90" src="https://github.com/user-attachments/assets/e97c28d5-8fb2-4471-ba83-a9f5d6e69143" />
+
+<img width="1680" height="1050" alt="Raptor Screenshot 2026 10 21 - 00 19 21 94" src="https://github.com/user-attachments/assets/052dcac4-ea32-4f39-b698-5b10c48700ed" />
+
+<img width="1680" height="1050" alt="Raptor Screenshot 2026 10 21 - 00 19 30 34" src="https://github.com/user-attachments/assets/7945f4c3-1804-44ee-8134-adc42caf42c9" />
+
+<img width="1680" height="1050" alt="Raptor Screenshot 2026 10 21 - 00 19 48 100" src="https://github.com/user-attachments/assets/ba3c1321-5e31-43bb-a25b-1772ed11abff" />
+
 **[⬇️ Baixar F-22 Raptor PT-BR v1.0 para Windows](https://github.com/fqsguitar/f22-raptor-ptbr/releases/download/v1.0.0/F22-Raptor-PTBR-Windows.zip)**
 
 1. Tenha o **F-22 Raptor** instalado e **feche o jogo** antes de continuar.
