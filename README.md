@@ -1,48 +1,86 @@
-# F-22 Raptor PT-BR
+# F-22 Raptor — Tradução PT-BR 🇧🇷
 
-Patch de traducao de textos do NovaLogic F-22 Raptor para portugues do Brasil, sem acentos ou cedilha dentro dos arquivos do jogo.
+Tradução para português brasileiro do clássico **F-22 Raptor (1997)**, desenvolvido pela **NovaLogic**.
 
-A versao 1.0 cobre os 2.219 campos identificados nas 12 tabelas RTXT ativas do PFF analisado: campanhas, briefings, radio escrito, objetivos, menus, HUD e ajuda. Foram alterados 1.836 campos; os restantes incluem nomes proprios, siglas, numeros e campos vazios. Tambem ha avisos traduzidos do executavel.
+Este projeto disponibiliza um **patch de tradução com instalador portátil para Windows**. Você não precisa instalar Python, configurar dependências nem editar arquivos manualmente.
 
-## Instalacao facil no Windows — sem instalar Python
+> **Importante:** apenas os textos gravados dentro do jogo são escritos sem acentos e sem cedilha, por limitações de compatibilidade. Esta documentação utiliza português normal.
 
-1. Tenha o jogo instalado e feche-o.
-2. Abra **[Releases](https://github.com/fqsguitar/f22-raptor-ptbr/releases)** e baixe `F22-Raptor-PTBR-Windows.zip` quando estiver disponivel.
-3. Extraia o ZIP em qualquer pasta.
-4. Execute **Instalar.cmd** e informe onde estao `Raptor.pff` e `Raptor.exe` (exemplo: `G:\Jogos\F-22 Raptor`).
-5. Aguarde a verificacao de hashes, criacao do backup e aplicacao da traducao.
+## 📥 Download e instalação
 
-**Nao precisa ter Python instalado.** O `Traduzir_F22.exe` vem incluido no pacote para Windows.
+**[⬇️ Baixar F-22 Raptor PT-BR v1.0 para Windows](https://github.com/fqsguitar/f22-raptor-ptbr/releases/download/v1.0.0/F22-Raptor-PTBR-Windows.zip)**
 
-O instalador nao aplica o patch a arquivos de versoes desconhecidas. Uma segunda execucao reconhece o jogo ja traduzido. Os backups ficam na pasta `.ptbr_backups` dentro da instalacao do jogo.
+1. Tenha o **F-22 Raptor** instalado e **feche o jogo** antes de continuar.
+2. Baixe o ZIP acima e extraia seu conteúdo.
+3. Execute **`Instalar.cmd`**.
+4. Quando solicitado, informe a **pasta onde o jogo está instalado**, por exemplo `G:\Jogos\F-22 Raptor`.
+5. Aguarde a validação e aplicação. Pronto!
 
-**Ainda nao apareceu ZIP em Releases?** O mantenedor pode abrir [Actions: Windows portatil](https://github.com/fqsguitar/f22-raptor-ptbr/actions/workflows/windows.yml), clicar em **Run workflow** e baixar o artefato `F22-Raptor-PTBR-Windows` quando terminar. Ao criar uma tag `v*`, o workflow tambem publica o ZIP em Releases.
+O pacote inclui o programa **`Traduzir_F22.exe`**, com tudo o que é necessário para aplicar a tradução. **Não é necessário instalar Python** nem ter conexão com a internet durante a aplicação.
 
-## Uso avancado (opcional, com Python)
+### 🔐 Backup e segurança
 
-Para desenvolvedores que quiserem executar o codigo diretamente, Python 3.8+:
+- O instalador verifica a **integridade dos arquivos por SHA-256** antes de modificar o jogo.
+- Cria backups verificados na pasta **`.ptbr_backups`**, dentro da instalação.
+- **Recusa versões desconhecidas** para evitar alterações incompatíveis.
+- Uma segunda execução identifica os arquivos já traduzidos.
+- Há opções avançadas para simular, restaurar e limpar temporários de projeto de forma seletiva.
+
+A tradução foi testada na aplicação a partir de uma instalação em inglês compatível, além do reconhecimento de uma instalação já traduzida. O comportamento em outras edições do jogo pode variar.
+
+## 🎮 O que foi traduzido?
+
+O patch v1.0 contempla textos de campanhas e missões, briefings, mensagens de rádio exibidas na tela, objetivos, menus, elementos do HUD, ajuda de controles e avisos selecionados do executável.
+
+Na análise do arquivo `Raptor.pff`, foram catalogados **2.219 campos** em 12 tabelas RTXT ativas, com **1.836 campos modificados**. Nem todos os campos precisam de tradução: alguns contêm nomes próprios, siglas, números ou estão vazios.
+
+**Limitação conhecida:** nem todos os briefings, situações de voo e ramificações das campanhas foram conferidos manualmente dentro do jogo. Consulte [PENDENCIAS.md](PENDENCIAS.md) para os pontos que ainda exigem revisão.
+
+## 🛠️ Uso avançado (opcional)
+
+Esta seção é destinada a desenvolvedores. Para instalar normalmente, **use o ZIP da seção de download**.
+
+Com Python 3.8 ou superior e os arquivos do repositório:
 
 ```powershell
+# Aplicar tradução
 python aplicar.py "G:\Jogos\F-22 Raptor"
+
+# Apenas validar, sem modificar arquivos
 python aplicar.py "G:\Jogos\F-22 Raptor" --simular
+
+# Restaurar arquivos anteriores à instalação
 python aplicar.py "G:\Jogos\F-22 Raptor" --restaurar
+
+# Limpeza seletiva de temporários identificados
 python aplicar.py "G:\Jogos\F-22 Raptor" --limpar-temporarios
 ```
 
-Esses comandos tambem funcionam com o executavel portatil substituindo `python aplicar.py` por `Traduzir_F22.exe`.
+No pacote portátil, você também pode substituir `python aplicar.py` por `Traduzir_F22.exe` para usar essas opções.
 
-A limpeza opcional remove apenas nomes listados em `temporarios.json` quando o conteudo confere com o hash registrado, depois de arquivar e verificar. Nao remove arquivos desconhecidos. Os arquivos temporarios arquivados nao sao restaurados por `--restaurar`.
+A limpeza é opcional: remove apenas arquivos de projeto cujos nomes e hashes constam em `temporarios.json`, após arquivamento e verificação. Arquivos desconhecidos são preservados. A opção `--restaurar` restaura os arquivos do jogo, mas **não** reverte a limpeza de temporários, que permanecem no ZIP de backup.
 
-## Compatibilidade e seguranca
+### Detalhes técnicos
 
-O `Raptor.pff` possui 113.493.525 bytes. As variantes aceitas sao identificadas por hashes exatos em `patch.json`; nome e tamanho nao bastam. O patch preserva tamanhos de arquivo, offsets e marcadores de controle; os dados originais do jogo que nao precisam ser traduzidos permanecem inalterados.
+- O `Raptor.pff` analisado possui **113.493.525 bytes**.
+- O patch suporta apenas as versões cujos **hashes exatos** estão catalogados em `patch.json`; nome e tamanho, sozinhos, não garantem compatibilidade.
+- As substituições preservam tamanho, offsets e marcadores de controle necessários.
+- `patch.json` contém os deltas e hashes para aplicação; `traducoes.json` documenta as traduções, offsets e capacidades.
+- Veja [RELATORIO.md](RELATORIO.md) para o escopo técnico dos testes.
 
-Veja [RELATORIO.md](RELATORIO.md) e [PENDENCIAS.md](PENDENCIAS.md) para o alcance dos testes e as limitacoes de verificacao visual.
+### 📦 Como o executável é gerado
 
-`traducoes.json` registra textos traduzidos, offsets e capacidades. `patch.json` contem deltas e hashes, sem distribuir o jogo completo.
+O pacote Windows é compilado pelo [GitHub Actions](https://github.com/fqsguitar/f22-raptor-ptbr/actions/workflows/windows.yml) usando PyInstaller, que incorpora o interpretador e os dados do patch no executável. Isso elimina a necessidade de instalar Python no computador do jogador.
 
-## Distribuicao
+## 📜 Distribuição e direitos
 
-Este repositorio nao inclui o jogo completo, executavel original, PFF original, saves ou bibliotecas. Tenha sua propria instalacao. A presenca em sites de abandonware nao comprova licenca de redistribuicao.
+Este repositório **não inclui o jogo original**, seu executável completo, `Raptor.pff` completo, saves ou bibliotecas originais. É necessário possuir uma instalação compatível.
 
-A licenca MIT em [LICENSE](LICENSE) cobre as ferramentas originais deste projeto, nao os direitos sobre o jogo. Veja [NOTICE.md](NOTICE.md).
+A presença do jogo em sites de abandonware **não significa automaticamente que exista autorização para redistribuí-lo**.
+
+A licença [MIT](LICENSE) se aplica às ferramentas originais deste projeto, não aos direitos sobre o jogo ou conteúdo de terceiros. Consulte [NOTICE.md](NOTICE.md).
+
+---
+
+**Projeto de tradução: Felipe Queiroz**  
+Feito por fãs, para fãs dos clássicos de PC. 🛩️🇧🇷
