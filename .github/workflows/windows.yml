@@ -1,0 +1,42 @@
+name: Windows portatil
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar empacotador
+        run: python -m pip install pyinstaller==6.16.0
+      - name: Criar exe com dados incluidos
+        run: python -m PyInstaller --onefile --clean --name Traduzir_F22 --add-data "patch.json;." --add-data "temporarios.json;." aplicar.py
+      - name: Gerar ZIP
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path pacote -Force | Out-Null
+          Copy-Item dist/Traduzir_F22.exe, Instalar.cmd, README.md, LICENSE, NOTICE.md -Destination pacote
+          Compress-Archive -Path pacote/* -DestinationPath F22-Raptor-PTBR-Windows.zip -Force
+      - uses: actions/upload-artifact@v4
+        with:
+          name: F22-Raptor-PTBR-Windows
+          path: F22-Raptor-PTBR-Windows.zip
+      - name: Publicar em Releases quando tag
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "${{ github.ref_name }}" *> $null
+          if ($LASTEXITCODE -eq 0) {
+            gh release upload "${{ github.ref_name }}" F22-Raptor-PTBR-Windows.zip --clobber
+          } else {
+            gh release create "${{ github.ref_name }}" F22-Raptor-PTBR-Windows.zip --title "F-22 Raptor PT-BR ${{ github.ref_name }}" --generate-notes
+          }
