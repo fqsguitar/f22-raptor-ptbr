@@ -6,6 +6,9 @@ Este projeto disponibiliza um **patch de tradução com instalador portátil par
 
 > **Importante:** apenas os textos gravados dentro do jogo são escritos sem acentos e sem cedilha, por limitações de compatibilidade. Esta documentação utiliza português normal.
 
+<img width="1680" height="1050" alt="Raptor Screenshot 2026 10 21 - 00 19 57 86" src="https://github.com/user-attachments/assets/bbabfadc-1391-4d06-b003-597c7277138e" />
+
+
 ## 📥 Download e instalação
 
 **[⬇️ Baixar F-22 Raptor PT-BR v1.0 para Windows](https://github.com/fqsguitar/f22-raptor-ptbr/releases/download/v1.0.0/F22-Raptor-PTBR-Windows.zip)**
