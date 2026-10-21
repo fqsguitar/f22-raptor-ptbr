@@ -1,0 +1,10 @@
+*.pff
+*.exe
+*.dll
+*.sav
+*.cfg
+*.bak
+*.zip
+.ptbr_backups/
+__pycache__/
+work/

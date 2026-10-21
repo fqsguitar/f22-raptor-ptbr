@@ -1,0 +1,257 @@
+[
+  {
+    "name": "f22_aplicar_csv_traduzido.py",
+    "size": 4723,
+    "sha256": "0e3b8e22d07b3c24661c76537ec9c416a4837dae3347556552a39c6e4954f3dc"
+  },
+  {
+    "name": "f22_catalogo_textos.txt",
+    "size": 184463,
+    "sha256": "1ec30e5ae41f8a2b1f0285d5e259e9810d834dfb96888d91bd242bef0d3d5286"
+  },
+  {
+    "name": "f22_extrair_catalogo.py",
+    "size": 1270,
+    "sha256": "1db65498bf9b2202fa4f896e2d7d59ea3fc24332e7cac788a62043778e28fa9d"
+  },
+  {
+    "name": "f22_pff_csv_tool.py",
+    "size": 4723,
+    "sha256": "0e3b8e22d07b3c24661c76537ec9c416a4837dae3347556552a39c6e4954f3dc"
+  },
+  {
+    "name": "f22_ptbr_mensagens_v08.py",
+    "size": 3024,
+    "sha256": "49ee259fa3243cbe2b4255cd26864dfe4d2cc1af411d4fe0480b5ff0772531df"
+  },
+  {
+    "name": "f22_ptbr_mensagens_v08_corrigido.py",
+    "size": 3021,
+    "sha256": "4f3573dbf7d73caff0c1579b2d32982c0d541c8c4788e52e3e746ec4d245c1b6"
+  },
+  {
+    "name": "f22_ptbr_menu_v05_experimental.py",
+    "size": 2497,
+    "sha256": "5abe31dbb5e7cc3268d845636a14a23155d219b30e2eee86441ba7320319ac19"
+  },
+  {
+    "name": "f22_ptbr_menu_v06.py",
+    "size": 1964,
+    "sha256": "5faf4bec988a149eee0532d91d0d323e1ff075565a7805d52c69cfe0d040c560"
+  },
+  {
+    "name": "f22_ptbr_menu_v06_corrigido.py",
+    "size": 1837,
+    "sha256": "f75df651e0dd72a5afb4639562f2f5b903e0c44aefd863509bb184a6725fe41c"
+  },
+  {
+    "name": "f22_ptbr_menus_v02.py",
+    "size": 1978,
+    "sha256": "224e4f9782e9756d368fa06cb7c3484730fb897939547d2e5fa5e6c82eb6ec71"
+  },
+  {
+    "name": "f22_ptbr_menus_v04.py",
+    "size": 3610,
+    "sha256": "d3eb8d5f3465644b137900a3ee72f6c3044a0814015399ad6a2395f3fdacc0c6"
+  },
+  {
+    "name": "f22_ptbr_v09_localizacao.py",
+    "size": 3751,
+    "sha256": "5ba7f7fe0b0a280fc960795cd134b871b63df2972331d435c2289c62f000c3b1"
+  },
+  {
+    "name": "f22_ptbr_v10_expansao.py",
+    "size": 7222,
+    "sha256": "09d6f6c6a0598e0ad53f875617c53be08443a5abbeaeb4a0724efeca5ff2e10a"
+  },
+  {
+    "name": "f22_ptbr_v11_massivo.py",
+    "size": 8668,
+    "sha256": "8d8c7bac631a52fb93d8eec264c58def43304d843d2d4afa4cd4c1bd5da57afc"
+  },
+  {
+    "name": "f22_ptbr_v11_relatorio.txt",
+    "size": 6173,
+    "sha256": "37aa84ed899afd4ff7f0146c568f10000713ea7ec900474020ccc750dda3b7a5"
+  },
+  {
+    "name": "f22_ptbr_v12_lote_unico.py",
+    "size": 8324,
+    "sha256": "338328a409070c7011f0dd2e15de8820ea5020db3633ea23e4d3a4373a95ea30"
+  },
+  {
+    "name": "f22_ptbr_v12_relatorio.txt",
+    "size": 18783,
+    "sha256": "b075ff69a553d4fdc4bd84ea7950f28bf6c6686af442066c56263b6ac96ab28d"
+  },
+  {
+    "name": "f22_ptbr_v13_missoes_radio.py",
+    "size": 36314,
+    "sha256": "90840d1dccb429f8141ddc8b310355f3603e4db9e303a1897916c2525389f66d"
+  },
+  {
+    "name": "f22_ptbr_v14_campanhas.py",
+    "size": 150836,
+    "sha256": "28d0ff3a8a22bcd0ed26acc1ebbfb38ac40b8d5f40389a79edcbdcfb1985acb6"
+  },
+  {
+    "name": "f22_ptbr_v15_briefings.py",
+    "size": 5567,
+    "sha256": "1b6edfa482a71bdf866651fa6a2a2f6165a91bea1da1453a1055022b018660a5"
+  },
+  {
+    "name": "f22_ptbr_v15_relatorio.txt",
+    "size": 5485,
+    "sha256": "2b9bdaf58af2bdd3500e007fa93ab18d0aa897d34e9f1d72afa50c14b12bba46"
+  },
+  {
+    "name": "f22_ptbr_v16_briefings_massivo.py",
+    "size": 52985,
+    "sha256": "d57b9fff4270c9e2149e668b4921646d2f1ac87c12f805bafa49fded8049a3ff"
+  },
+  {
+    "name": "f22_ptbr_v16_relatorio.txt",
+    "size": 46179,
+    "sha256": "c0045c70f231d28c2f92c9a1c856a93af4bcd494716cb585b58423aa2962042a"
+  },
+  {
+    "name": "f22_ptbr_v17_briefings_integrais.py",
+    "size": 20756,
+    "sha256": "0e77398a8ba421331837c116e769a07615add9e71bdd50272f51bb61707e1d20"
+  },
+  {
+    "name": "f22_ptbr_v17_relatorio.txt",
+    "size": 604,
+    "sha256": "0d684e437338a9d50aaa04428c6f745eac8abe0dc7d06b3277184f60e33e2b2a"
+  },
+  {
+    "name": "f22_ptbr_v18_lote_grande.py",
+    "size": 117830,
+    "sha256": "1a4a2dd4f6749166bcb347ad988d2059688381432966085fc69cf578201177cb"
+  },
+  {
+    "name": "f22_ptbr_v18_relatorio.txt",
+    "size": 2324,
+    "sha256": "d253327119f45c0e51c129e44f2afd1ccc2a9775bb447615bcb986a468e1a798"
+  },
+  {
+    "name": "f22_ptbr_v19_relatorio.txt",
+    "size": 8910,
+    "sha256": "b00824de798d782671accddffce5182e23582a83d0c30ec590efcc37ee7b5d2c"
+  },
+  {
+    "name": "f22_ptbr_v19_sem_acentos_lote_massivo.py",
+    "size": 269721,
+    "sha256": "80272dacde622671282a1dc0dffb3418e75842a0453ce818d233bdd383599e3f"
+  },
+  {
+    "name": "f22_ptbr_v20_patch_ampliado.py",
+    "size": 16515,
+    "sha256": "9eac708d10f757c9b79319d66d729b7ecabb8652f534b7b68cafba4756d9bb17"
+  },
+  {
+    "name": "f22_ptbr_v20_relatorio.txt",
+    "size": 3245,
+    "sha256": "a171361bb63ee10769503415e336f42528334cd5ad90d7289a7b28ffb8bdafd1"
+  },
+  {
+    "name": "f22_ptbr_v21_blocos_revisados.py",
+    "size": 4107,
+    "sha256": "636d0936020a8488b57bbc001bbeccd5f546c64568058928fa63206711a280bc"
+  },
+  {
+    "name": "f22_ptbr_v21_relatorio.txt",
+    "size": 230,
+    "sha256": "73858ff8db9d24f3ec434cb70166faf0e4ac8175cd02a2007a3c4fdfc36a17fc"
+  },
+  {
+    "name": "f22_ptbr_v22_relatorio.txt",
+    "size": 793,
+    "sha256": "a0003bdd1f0ec93e709bdb8e00c308012ece5357321c53f7fc54fe6bcf44fcfc"
+  },
+  {
+    "name": "f22_ptbr_v22_textos_completos.py",
+    "size": 7323,
+    "sha256": "d686488242151c06f5877792b90fb7bebb8422b3f21ae8401cc6fae6375c3c2d"
+  },
+  {
+    "name": "f22_ptbr_v23_corrige_saida.py",
+    "size": 1282,
+    "sha256": "b8ce4c23cf8417301b4e3e19bfb605355da861bc48eba7ae6496f6fe4cd2e9c5"
+  },
+  {
+    "name": "f22_ptbr_v24_briefings_reescritos.py",
+    "size": 7371,
+    "sha256": "1005dcd23f252d103c4a74a70db3c63115b73311c1822baead4d84887f3da4e9"
+  },
+  {
+    "name": "f22_ptbr_v24_relatorio.txt",
+    "size": 342,
+    "sha256": "2f268f41e3f0a03691ce242f49af521a455ea7b0747b7ecbd1953b9df56d9c16"
+  },
+  {
+    "name": "f22_ptbr_v25_blocos_integrais.py",
+    "size": 11698,
+    "sha256": "177e03bffd1aefee1ebeb4b12e69c6fc08fef727c1ab1cbf6fedfca72d86c0e4"
+  },
+  {
+    "name": "f22_ptbr_v25_relatorio.txt",
+    "size": 408,
+    "sha256": "8d4ad4939e6431ffe539ac7f06729a68cdf901828ddf650fdae1becd42a1c294"
+  },
+  {
+    "name": "f22_ptbr_v26_blocos_completos.py",
+    "size": 12814,
+    "sha256": "3ff15298f6fe7529f33224d19afb7931caf1a448e7137be6bcb8afc6c1534808"
+  },
+  {
+    "name": "f22_ptbr_v26_relatorio.txt",
+    "size": 485,
+    "sha256": "451b2ab879b9914290b4e0b96a983ddef2d67b9bf5ea094c8515277b37abfd15"
+  },
+  {
+    "name": "f22_ptbr_v27_blocos_integrais.py",
+    "size": 5321,
+    "sha256": "973921299f84209b2b2de3e57978e4318c08a352a0c53a5fcd0d67059b5650f0"
+  },
+  {
+    "name": "f22_ptbr_v27_relatorio.txt",
+    "size": 308,
+    "sha256": "837cb92549fa0b77883047542aa34b2b6532ef66ca8b32a31cd89ebbcfc093bd"
+  },
+  {
+    "name": "f22_teste_acentos.py",
+    "size": 1737,
+    "sha256": "2374a3d893d0819be712d45ea7ab05427d2b305c463b6bf784f7e13a8377a37c"
+  },
+  {
+    "name": "f22_textos.csv",
+    "size": 482950,
+    "sha256": "fa308cf182e637a8bde0316e78bfa5305bcb9100fd327ded0dd076cb74260322"
+  },
+  {
+    "name": "f22_textos_atualizados.csv",
+    "size": 482944,
+    "sha256": "5e07872c609162e05bbffc33278ee47b1ac9acafdc75ea9e3ec3e25cdfa2641b"
+  },
+  {
+    "name": "f22_textos_proximo_lote.csv",
+    "size": 484050,
+    "sha256": "4660d332d40488b908d915cf6555dd19f02e65c4c69a11255d17468a81480303"
+  },
+  {
+    "name": "f22_textos_revisados_lote.csv",
+    "size": 493090,
+    "sha256": "9ca4cbc532afce832d636ce082f872f99b8381def2b218284233349c722c2be0"
+  },
+  {
+    "name": "f22_textos_revisao_adicional.csv",
+    "size": 521343,
+    "sha256": "9d827fe483de54f8fca46488dbf7db8935a090d743c60abe909fb9f5a300b3e9"
+  },
+  {
+    "name": "f22_textos_traduzidos.csv",
+    "size": 491767,
+    "sha256": "e83d654291d3f43af2d0427f306c20da48d530f7c8418f76a03be63b7787a2e3"
+  }
+]
